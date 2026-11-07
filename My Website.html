@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <link rel="icon" type="image/png" href="C:\Users\ACER\OneDrive\Desktop\My portfolio\favicon.png">
+    <title>My Website></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <style>
+        
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+header {
+    background-color: #243447;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+#hero {
+    background-color: #dceafe;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    background-color: #243447;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 180px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #222;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+.nav-links a:hover {
+    color: orange;
+}
+#menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: lightblue;
+}
+
+#hero-content {
+  max-width: 600px;
+}
+
+#hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.hero-btn {
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.hero-btn:hover {
+    background-color: #1d4ed8;
+}
+#hero-content h2 {
+    line-height: 1.2;
+
+}
+#hero-content p {
+    max-width: 500px;
+}
+ #Contact {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(190, 220, 230);
+            color: black;
+            }
+          #contact-btn {
+             cursor: pointer;
+             background-color: #2563eb;
+             color: white;
+             padding: 12px 24px;
+             border: none;
+             border-radius: 5px;
+             margin-top: 15px;
+
+          }
+           
+            
+    html {
+        scroll-behavior: smooth;
+    }
+@media (max-width: 600px) {
+    #menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        margin: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+    #hero {
+        padding: 24px;
+    }
+    #hero h2 {
+        font-size: 32px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+    #Contact {
+        padding: 20px 12px;
+    }
+}
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Website</h1>
+        </header>
+        <nav class="navbar">
+            <h2>My store</h2>
+            <button id="menu-btn">☰</button>
+            <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+        <main>
+            <section id="hero">
+                <div class="hero-content">
+                <h2 class="main-heading">Start From Here To Prioritize Your Dreams</h2>
+                <p>Start your web development journey from today and build your future for tommorrow.</p>
+                <button class="hero-btn">Get Started</button>
+                </div>
+            </section>
+            
+       <section id="services">
+       <h2>My Services</h2>
+
+       <div class="service-container">
+
+        <div class="service-card">
+            <h3>Web Design</h3>
+            <p>I create beautiful website designs.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>I build functional websites.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Responsive Design</h3>
+            <p>I make websites work on different screens.</p>
+        </div>
+        
+        <div class="service-card">
+            <h3>Why Choose Me</h3>
+            <ul>I create simple and useful websites.</ul>
+            <ul>I focus on clean and responsive web designs.</ul>
+        </div>
+
+         </div>
+        </section>
+            </section>
+           
+             <section id="Contact">
+                <h2>Contact Information</h2>
+                <p>Have a website idea? I'd love to help you bring it to life! Feel free to contact me to discuss 
+                    your project or ask any questions. Let's create something amazing together.</p>
+                <a href="mailto:sandsdevel0pment101@gmail.com">Email Me</a>
+                <p>Instagram id : @sands.developments</p>
+                <button id="contact-btn">Contact Me</button>
+                <p id="contact-message"></p>
+                 
+            </section>
+           
+        </main>
+        <footer>
+            <p>My Website | 2026</p>
+        </footer>
+        <script>
+            let menuBtn = document.getElementById("menu-btn");
+let navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", function() {
+    navLinks.classList.toggle("show");
+});
+
+let contactBtn = document.querySelector("#contact-btn");
+let contactMessage = document.querySelector("#contact-message");
+
+contactBtn.addEventListener("click" , function(){
+    contactMessage.textContent = "Thankyou for your interest! Email me to get in touch."
+})
+
+ let heading = document.querySelector(".main-heading");
+        let button = document.querySelector(".hero-btn");
+
+        button.addEventListener("click" , function(){
+            heading.textContent = "Thankyou for visiting my website! Contact me to get started.";
+        });
+
+        </script>
+    </body>
+</html>
